@@ -29,7 +29,12 @@ Vector of length no, containing the locations of the simulated events.
 \author{Niklas Hohmann}
 
 \references{
-Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes." arXiv 2019. <arXiv:1901.10754>}
+Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes: The R package "IPPP"" arXiv 2019. <arXiv:1901.10754>
+}
+
+\seealso{
+\code{vignette("IPPP")} for an overview of the features of the IPPP package and some background.
+}
 
 \examples{
 #define rate function
@@ -53,4 +58,6 @@ points(p3,1.5,cex=2,pch=3) #might be out of the plot
 }
 
 \keyword{ Poisson }
+\keyword{ Poisson point process}
+\keyword{ Point process }
 \keyword{ IPPP }

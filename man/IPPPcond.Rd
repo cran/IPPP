@@ -21,11 +21,15 @@ Below min(xrate) and above max(xrate), the rate function r is assumed to have th
 \value{A vector of length samplesize, containing the locations of the simulated events}
 
 \author{Niklas Hohmann}
+
 \references{
-Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes." arXiv 2019. <arXiv:1901.10754>}
+Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes: The R package "IPPP"" arXiv 2019. <arXiv:1901.10754>
+}
 
 \seealso{
-\code{\link{IPPPuncond}} for the unconditioned version with a random number of events occurring
+\code{\link{IPPPuncond}} for the unconditioned version with a random number of events occurring.
+
+\code{vignette("IPPP")} for an overview of the features of the IPPP package and some background.
 }
 
 \examples{
@@ -48,4 +52,6 @@ points(p30,rep(1,samplesize),cex=2,pch=3) #compare with former results
 }
 
 \keyword{ Poisson }
+\keyword{ Poisson point process}
+\keyword{ Point process }
 \keyword{ IPPP }

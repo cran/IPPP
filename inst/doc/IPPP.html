@@ -205,7 +205,7 @@ hr {
 
 <h2>Introduction</h2>
 
-<p>A number of problems can be modeled as points (&ldquo;events&rdquo;) that are random, (stochastically) independent of each other, and occur with a changing rate on a line. This line might be time or a spatial dimension. Examples of this are animal sightings in time or in space, or the times customers enter a supermarket. The mathematical structure describing these processes is called an inhomogeneous Poisson point process, here abbreviated as IPPPs.
+<p>A number of problems can be modeled as points (&ldquo;events&rdquo;) that are random, (stochastically) independent of each other, and occur with a changing rate on a line. This line might be time or a spatial dimension. Examples of this are animal sightings in time or in space, or the times at which customers enter a supermarket. The mathematical structure describing these processes is called an inhomogeneous Poisson point process, here abbreviated as IPPP.
 The package IPPP provides methods to</p>
 
 <ol>
@@ -217,12 +217,12 @@ The package IPPP provides methods to</p>
 
 <ul>
 <li>the total number of points occurring or</li>
-<li>the already known location of points</li>
+<li>the a priori known location of points</li>
 </ul>
 
 <h2>Rate Functions</h2>
 
-<p>An IPPPs is defined by a positive function determining the rate with which points occur. This function is called the rate function. The expected number of points between some values a and b is given as the integral from a to b over the rate function.</p>
+<p>An IPPP is defined by a positive function determining the rate with which points occur. This function is called the rate function. The expected number of points between some values a and b is given as the integral from a to b over the rate function.</p>
 
 <p>For the package, rate functions are always assumed to be piecewise linear. This makes it possible to define them using two vectors, one with the x values (named <code>xrate</code> ) and one with the corresponding y values (named <code>yrate</code> ).
 The basic way to define a rate function is to define these vectors by entering them by hand.</p>
@@ -291,6 +291,10 @@ plot(xrate,yrate,type=&#39;l&#39;,ylab=&#39;rate&#39;,xlab=&#39;x&#39;,main=&#39
 <h2>Examples</h2>
 
 <p>For examples please refer to the help pages of the corresponding functions</p>
+
+<h2>References</h2>
+
+<p>Hohmann, Niklas. &ldquo;Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes: The R package &quot;IPPP&rdquo;&ldquo; arXiv 2019. <a href="https://arxiv.org/abs/1901.10754">https://arxiv.org/abs/1901.10754</a> .</p>
 
 </body>
 

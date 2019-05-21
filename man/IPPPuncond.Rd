@@ -20,9 +20,14 @@ the value zero.}
 \author{Niklas Hohmann}
 
 \references{
-Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes." arXiv 2019. <arXiv:1901.10754>}
+Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes: The R package "IPPP"" arXiv 2019. <arXiv:1901.10754>
+}
 
-\seealso{\code{\link{IPPPuncond}} for a version with a fixed number of events occurring.}
+\seealso{
+\code{\link{IPPPuncond}} for a version with a fixed number of events occurring.
+
+\code{vignette("IPPP")} for an overview of the features of the IPPP package and some background.
+}
 
 \examples{
 #Define rate function
@@ -42,5 +47,8 @@ pp=IPPPuncond(xrate,yrate,expsamplesize)
 length(pp) #in most cases, the result is not exactely 20
 points(pp,rep(1,length(pp)),cex=2,pch=3) #compare with former results
 }
+
 \keyword{ Poisson }
+\keyword{ Poisson point process}
+\keyword{ Point process }
 \keyword{ IPPP }

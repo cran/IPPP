@@ -1,10 +1,10 @@
 ---
-title: "Introduction to the package IPPP"
+title: "IPPP"
 author: "Niklas Hohmann"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to the package IPPP}
+  %\VignetteIndexEntry{IPPP}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 This document provides a brief introduction into the R package IPPP with an overview of the available functions and some theoretical background.
 
 ## Introduction
-A number of problems can be modeled as points ("events") that are random, (stochastically) independent of each other, and occur with a changing rate on a line. This line might be time or a spatial dimension. Examples of this are animal sightings in time or in space, or the times customers enter a supermarket. The mathematical structure describing these processes is called an inhomogeneous Poisson point process, here abbreviated as IPPPs.
+A number of problems can be modeled as points ("events") that are random, (stochastically) independent of each other, and occur with a changing rate on a line. This line might be time or a spatial dimension. Examples of this are animal sightings in time or in space, or the times at which customers enter a supermarket. The mathematical structure describing these processes is called an inhomogeneous Poisson point process, here abbreviated as IPPP.
 The package IPPP provides methods to
 
 1. Simulate the number and location of points in IPPPs
@@ -27,10 +27,10 @@ The package IPPP provides methods to
 with the option to include information that is available upfront into the analysis. This information can for example be
 
 * the total number of points occurring or
-* the already known location of points
+* the a priori known location of points
 
 ## Rate Functions
-An IPPPs is defined by a positive function determining the rate with which points occur. This function is called the rate function. The expected number of points between some values a and b is given as the integral from a to b over the rate function.
+An IPPP is defined by a positive function determining the rate with which points occur. This function is called the rate function. The expected number of points between some values a and b is given as the integral from a to b over the rate function.
 
 For the package, rate functions are always assumed to be piecewise linear. This makes it possible to define them using two vectors, one with the x values (named `xrate` ) and one with the corresponding y values (named `yrate` ).
 The basic way to define a rate function is to define these vectors by entering them by hand.
@@ -83,3 +83,6 @@ If the location of one point is already known, the functions
 
 ## Examples
 For examples please refer to the help pages of the corresponding functions
+
+## References
+Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes: The R package "IPPP"" arXiv 2019. <https://arxiv.org/abs/1901.10754> .

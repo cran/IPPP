@@ -13,7 +13,8 @@
 The DESCRIPTION file:
 \packageDESCRIPTION{IPPP}
 \packageIndices{IPPP}
-~~ An overview of how to use the package, including the most important functions ~~
+
+For the vignette, use \code{vignette("IPPP")}
 }
 \author{
 \packageAuthor{IPPP}
@@ -21,7 +22,12 @@ The DESCRIPTION file:
 Maintainer: \packageMaintainer{IPPP}
 }
 \references{
-Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes." arXiv 2019. <arXiv:1901.10754>}
+Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes: The R package "IPPP"" arXiv 2019. <arXiv:1901.10754>
+}
 
 \keyword{ package }
+\keyword{ Poisson }
+\keyword{ Poisson point process}
+\keyword{ Point process }
+\keyword{ IPPP }
 

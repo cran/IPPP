@@ -30,7 +30,12 @@ Vector of length no, whose i-th entry contains the number of events in the inter
 \author{Niklas Hohmann}
 
 \references{
-Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes." arXiv 2019. <arXiv:1901.10754>}
+Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes: The R package "IPPP"" arXiv 2019. <arXiv:1901.10754>
+}
+
+\seealso{
+\code{vignette("IPPP")} for an overview of the features of the IPPP package and some background.
+}
 
 \examples{
 #determine rate function
@@ -56,4 +61,6 @@ IPPPinterval(from,to,xrate,yrate,no=20,expsamplesize=200)
 }
 
 \keyword{ Poisson }
+\keyword{ Poisson point process}
+\keyword{ Point process }
 \keyword{ IPPP }

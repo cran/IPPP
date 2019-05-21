@@ -22,9 +22,15 @@ the known event.}
 \author{Niklas Hohmann}
 
 \references{
-Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes." arXiv 2019. <arXiv:1901.10754>}
+Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes: The R package "IPPP"" arXiv 2019. <arXiv:1901.10754>
+}
 
-\seealso{\code{\link{IPPPnthpointdens}} for the probability density of the location of the of the n-th event, given that a fixed number of events occur.}
+\seealso{
+\code{\link{IPPPnthpointdens}} for the probability density of the location of the of the n-th event, given that a fixed number of events occur.
+
+\code{vignette("IPPP")} for an overview of the features of the IPPP package and some background.
+
+}
 
 \examples{
 #define rate function
@@ -48,4 +54,7 @@ lines(r2$x,r2$densval,col="green",lwd=3)
 }
 
 \keyword{ Poisson }
+\keyword{ Poisson point process}
+\keyword{ Point process }
 \keyword{ IPPP }
+\keyword{ density }

@@ -27,10 +27,15 @@ A list containing two entries:
 \author{Niklas Hohmann}
 
 \references{
-Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes." arXiv 2019. <arXiv:1901.10754>}
+Hohmann, Niklas. "Conditional Densities and Simulations of Inhomogeneous Poisson Point Processes: The R package "IPPP"" arXiv 2019. <arXiv:1901.10754>
+}
 
 
-\seealso{ \code{\link{IPPPconddens}} for the probability density of the n-th event above/below the location of some given event. }
+\seealso{
+\code{\link{IPPPconddens}} for the probability density of the n-th event above/below the location of some given event. 
+
+\code{vignette("IPPP")} for an overview of the features of the IPPP package and some background.
+}
 \examples{
 sx=c(1,2,3,4,5)
 sy=c(0,1,1,3,0)
@@ -50,4 +55,7 @@ legend('topleft',legend=paste('pdf of point no.',as.character(n),
 }
 
 \keyword{ Poisson }
+\keyword{ Poisson point process}
+\keyword{ Point process }
 \keyword{ IPPP }
+\keyword{ density }
